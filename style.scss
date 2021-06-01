@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 3000px;
+}
+
+#banner {
+    width: 100vw;
+    height: 500px;
+    background-image: url("https://fakeimg.pl/1650x600/");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 40% 50%;
+}
+.marquee {
+    margin: 100px auto;
+    height: 100px;
+    width: 1000px;
+    overflow: hidden;
+    position: relative;
+    font-size: 48px;
+    #marquee-box {
+        display: block;
+        width: 200%;
+        height: 75px;
+        position: absolute;
+        overflow: hidden;
+        animation: marquee 5s linear infinite;
+        .span {
+            float: left;
+            width: 50%;
+        }
+        @keyframes marquee {
+            0% {
+                left: 0;
+            }
+            100% {
+                left: -100%;
+            }
+        }
+    }
+}
+
+#tag{
+    width: 100vw;
+    text-align: center;
+    .btn{
+    padding: 15px;
+    width: 100px;
+    margin: 30px;
+    background-color:#CE0000;
+    font-size: 24px;
+    color:#fff;
+    border: none;
+    }
+}
+#Search-result{
+    .result-box{
+        
+    }
+}
